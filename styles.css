@@ -193,6 +193,38 @@ a {
   margin: 0;
 }
 
+.timeline-list {
+  border-top: 1px solid var(--line);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 28px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.timeline-period {
+  margin: 0;
+  color: var(--accent-deep);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.timeline-item h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.timeline-item p:not(.timeline-period) {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+}
+
 .strength-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -456,6 +488,7 @@ a {
   }
 
   .intro-grid,
+  .timeline-item,
   .strength-list,
   .project-grid,
   .skill-groups,
